@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MTsN Berau</title>
+    <link rel="icon" href="./img/Logo Mts New.png" type="image/png" />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./dist/css/calendar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+
+
+
+    <!-- JS -->
+    <script src="./dist/js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="./dist/js/calendar.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+  </head>
+  <body class="bg-body" id="top">
+    <div class="m-0 p-0 hidden left-0 w-max bottom-5">
+    </div>
+    <nav class="navbar">
+      <div class="branding lg:inline-flex hidden">
+        <a href="./" class="brand-link my-auto"><img src="./img/Logo Mts New.png" alt="Logo Mts Negeri Berau" class="img-brand"></a>
+        <h2 class="brand my-auto text-white font-medium">Madrasah Tsanawiyah Negeri Berau</h2>
+      </div>
+
+        <img src="./img/Logo Mts New.png" alt="Logo Mts Negeri Berau" class="w-8 my-auto lg:hidden">
+        <h2 class="brand my-auto text-white font-medium lg:hidden">Madrasah Tsanawiyah Negeri Berau</h2>
+
+      <div class="menuList">
+        <ul class="text-white menu-nav-lg">
+          <li class="nav-menu-lg"><a href="./index.html" class="nav-link">Beranda</a></li>
+        </ul>
+        <button class="toggleTheme ml-4">
+          <span class="toggle-indicator">
+            <i class="bi bi-moon-fill darkMode showDark"></i>
+            <i class="bi bi-sun-fill lightMode"></i>
+          </span>
+        </button>
+      </div>
+
+      <button class="cursor-pointer hbButton" data-target="navMenuMobile">
+        <div class="hb-menu bg-gray-400"></div>
+        <div class="hb-menu bg-gray-400"></div>
+        <div class="hb-menu bg-gray-400"></div>
+      </button>
+    </nav>
+
+    <div class="menuMobile navbarMenu h-full overflow-y-auto -left-full fixed" id="navMenuMobile">
+      <div class="w-full px-5 py-4">
+        <img src="./img/Logo Mts New.png" alt="Logo Mts Negeri Berau" class="w-12 mx-auto">
+        <h1 class="brand-mobile-title">Madrasah Tsanawiyah Negeri Berau</h1>
+      </div>
+      <div class="mb-4">
+        <button class="toggleTheme mx-auto">
+          <span class="toggle-indicator">
+            <i class="bi bi-moon-fill darkMode showDark"></i>
+            <i class="bi bi-sun-fill lightMode"></i>
+          </span>
+        </button>
+      </div>
+      <div class="searchMobile flex justify-center">
+        <input type="text" placeholder="&nbsp; Ketik lalu tekan Enter&nbsp;&nbsp;" name="search" class="search-input w-0">
+        <button class="search-btn"><i class="bi bi-search search-icon"></i></button>
+      </div>
+      <div class="menuListMobile my-5">
+        <ul class="text-white menu-nav">
+          <li class="navMenu"><a href="./index.html" class="nav-link">Beranda</a></li>
+        </ul>
+      </div>
+    </div>
+
+      <!-- Slider main container -->
+      <div class="swiper big-hero">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="./img/mtsn slide 1.webp" alt="Image-1" class="img-hero lg:img-hero-lg">
+            <div class="hero-bg-section">
+              <div class="hero-section">
+                <h1 class="hero-title">
+                  Selamat Datang Di
+                </h1>
+                <h1 class="hero-title">
+                  Madrasah Tsanawiyah Negeri Berau
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/mtsn slide 2.webp" alt="Image-3" class="img-hero lg:img-hero-lg">
+            <div class="hero-bg-section">
+              <div class="hero-section">
+                <h1 class="hero-title">Salah Satu Madrasah<br>Terbaik Di Berau</h1>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/mtsn slide 3.webp" alt="Image-4" class="img-hero lg:img-hero-lg">
+            <div class="hero-bg-section">
+              <div class="hero-section">
+                <h1 class="hero-title">Kami Tunggu</h1>
+                <h1 class="hero-title">Kehadiran Putra & Putri</h1>
+                <h1 class="hero-title">Anda Di Sini.</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev">
+          <i class="bi bi-chevron-left"></i>
+        </div>
+        <div class="swiper-button-next">
+          <i class="bi bi-chevron-right"></i>
+        </div>
+      </div>
+
+      <!-- Sambutan Kepsek Section -->
+      <div class="sambutan">
+        <div class="sambutan-container-left">
+          <img src="./img/sambutan index.jpg" alt="Sambutan Pimpinan Image" class="sambutan-img ">
+        </div>
+        <div class="sambutan-container-right">
+          <h2 class="sambutan-title">
+            Sambutan Pimpinan
+          </h2>
+  
+          <p class="sambutan-desc">
+            Bismillahirrahmanirrahim
+            
+            Assalamualaikum WR.WB
+            
+            Segala puji tertinggi hanya bagi Allah SWT yang telah
+            melimpahkan kemampuan dan keahlian kepada umat
+            manusia, khususnya dalam bidang teknologi informasi.
+            Shalawat dan salam senantiasa kita tujukan kepada junjungan
+            Nabi Muhammad SAW, sang motivator terbaik sepanjang masa.
+            
+            Dengan penuh syukur, kami mengucapkan
+            selamat datang di website fakeproject Madrasah Tsanawiyah Negeri Berau,
+            tempat di mana cahaya ilmu dan nilai-nilai Islami menyinari
+            langkah-langkah generasi masa depan. Kami berkomitmen
+            untuk menyelenggarakan pendidikan yang berlandaskan
+            pada Al-Qur'an dan Sunnah Rasulullah SAW. Di sini, setiap
+            anak diberdayakan untuk mengembangkan potensi diri,
+            memperkuat akidah, dan mencapai keunggulan dalam
+            era teknologi yang terus berkembang.
+            
+            Terima kasih telah mempercayakan pendidikan anak-anak
+            tercinta kepada Madrasah ini. Bersama-sama,
+            kita mengarahkan mereka menjadi pemimpin masa depan
+            yang berbakti kepada agama, bangsa, dan alam semesta.
+            Semoga perjalanan pendidikan di Madrasah Tsanawiyah Negeri ini
+             menjadi cahaya penerang bagi langkah-langkah
+            anak-anak kita, dengan ridha dan berkah dari Allah SWT.
+          
+            Wassalamu'alaikum Warahmatullahi Wabarakatuh.
+          </p>
+        </div>
+      </div>
+
+      
+<!-- Main -->
+<div class="wrapper">
+  <div class="wrapper-content">
+    <!-- Berita Terbaru -->
+    <div class="berita-container">
+      <div class="berita-terbaru-container">
+        <div class="berita-terbaru-header">
+          <h1 class="berita-terbaru-title">
+            Berita Terbaru
+          </h1>
+        </div>
+
+        <div class="berita-terbaru-content">
+          <div class="berita-wrapper">
+            <a href="#" class="berita-terbaru-1 berita-terbaru">
+              <div class="card">
+                <div class="card-title">
+                  <img src="./img/berita 1.webp" alt="Berita Terbaru" class="berita-img">
+                </div>
+                <div class="card-content">
+                  <h1 class="berita-title">
+                    Berita Terbaru 
+                  </h1>
+                  <span class="berita-sub">
+                    <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Alkahfi Chandra Redhata</span>
+                    <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">9
+                      Juli 2023</span>
+                  </span>
+                  <p class="berita-desc">
+                    Selamat & sukses untuk PIK-R ASTER MTsN Berau atas prestasinya sebagai juara 3 Debat GenRe Dalam Rangka Acara Anniversary Pusat Invormasi Konseling Remaja BARINTAK ke-11 tahun.
+                    5-9 Juli 2023. <br>SALAM GENRE..‼️
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="berita-terbaru-2 berita-terbaru">
+              <div class="card">
+                <div class="card-title">
+                  <img src="./img/berita 2.webp" alt="Berita Terbaru" class="berita-img">
+                </div>
+                <div class="card-content">
+                  <h1 class="berita-title">
+                    Berita Terbaru 
+                  </h1>
+                  <span class="berita-sub">
+                    <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Alkahfi Chandra Redhata</span>
+                    <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">8
+                      Juli 2023</span>
+                  </span>
+                  <p class="berita-desc">
+                    Selamat & Sukses Almira Syhifa Ismanova  <br>
+                    Juara 1 Karate Kumite Putri kategori SMP dari beberapa ranting di kab. Berau
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="berita-wrapper b-wrap-2">
+            <a href="#" class="berita-terbaru-3 berita-terbaru">
+              <div class="card">
+                <div class="card-title">
+                  <img src="./img/berita 3.heic" alt="Berita Terbaru" class="berita-img">
+                </div>
+                <div class="card-content">
+                  <h1 class="berita-title">
+                    Berita Terbaru 
+                  </h1>
+                  <span class="berita-sub">
+                    <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Alkahfi Chandra Redhata</span>
+                    <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">27
+                      Juni 2023</span>
+                  </span>
+                  <p class="berita-desc">
+                    Selamat & Sukses Raidul Dzaki Ramdhani,sbg :
+                    <Br>•Juara 1 kategori renang 50 m gaya bebas,<br>
+                        •Juara 1 kategori renang 50 m gaya dada,<br>
+                        •Juara 1 kategori renang 50 m gaya kupu-kupu <br>
+                        Dalam ajang Kejuaraan Olimpiade Olahraga Siswa Nasional (O2SN) tingkat SMP Kabupaten Berau tahun 2023.
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="berita-terbaru-4 berita-terbaru">
+              <div class="card">
+                <div class="card-title">
+                  <img src="./img/berita 4.webp" alt="Berita Terbaru" class="berita-img">
+                </div>
+                <div class="card-content">
+                  <h1 class="berita-title">
+                    Berita Terbaru 
+                  </h1>
+                  <span class="berita-sub">
+                    <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Alkahfi Chandra Redhata</span>
+                    <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">22
+                      Juni 2023</span>
+                  </span>
+                  <p class="berita-desc">
+                    Selamat & Sukses untuk Raidul Dzaki Ramdhani atas torehan prestasi 
+                    sebagai Juara 3 Kejuaraan Bulutangkis BUPATI CUP Antar Pelajar Kabupaten Berau tahun 2023.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="berita-terbaru-4 berita-terbaru">
+              <div class="card">
+                <div class="card-title">
+                  <img src="./img/berita 5.webp" alt="Berita Terbaru" class="berita-img">
+                </div>
+                <div class="card-content">
+                  <h1 class="berita-title">
+                    Berita Terbaru 
+                  </h1>
+                  <span class="berita-sub">
+                    <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Alkahfi Chandra Redhata</span>
+                    <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">22
+                      Mei 2023</span>
+                  </span>
+                  <p class="berita-desc">
+                    Alhamdulillah, Selamat & Sukses kepada Siswi MTsN Berau yang telah berprestasi 
+                    pada event MTQ Tingkat Provinsi Kaltim ke 44 di Kota Balikpapan. <br>
+                    -Paquita Luthfira Putri <br> (Kelas 8A Tahfidz) (Juara Harapan 1 Cabang Fahmi Qur'an) <Br>
+                    Selalu semangat, dan selalu tingkatkan prestasi.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="berita-terbaru-4 berita-terbaru">
+              <div class="card">
+                <div class="card-title">
+                  <img src="./img/berita 6.webp" alt="Berita Terbaru" class="berita-img">
+                </div>
+                <div class="card-content">
+                  <h1 class="berita-title">
+                    Berita Terbaru 
+                  </h1>
+                  <span class="berita-sub">
+                    <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Alkahfi Chandra Redhata</span>
+                    <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">22
+                      Mei 2023</span>
+                  </span>
+                  <p class="berita-desc">
+                    Alhamdulillah, Selamat & Sukses kepada Siswa MTsN Berau yang telah berprestasi 
+                    pada event MTQ Tingkat Provinsi Kaltim ke 44 di Kota Balikpapan. <br>
+                    -FatihulKhoir Ats Tsaqif <br>(Kelas 8A Tahfidz) (Juara Harapan 2 Cabang Tahfidz 1 Juz & Tilawah Putra) <Br>
+                      Selalu semangat, dan selalu tingkatkan prestasi.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ekskul Post -->
+    <div class="ekskul-container">
+      <div class="post-kategori-container">
+        <div class="post-kategori-header">
+          <h1 class="post-kategori-title">Kegiatan</h1>
+        </div>
+
+        <div class="post-kategori-wrapper">
+          <a href="#" class="berita-terbaru-1">
+            <div class="card">
+              <div class="card-title">
+                <img src="./img/kegiatan 1.webp" alt="Post Kategori 1" class="berita-img">
+              </div>
+              <div class="card-content">
+                <h1 class="berita-title">
+                  Kegiatan Berbagi Takjil Gratis
+                </h1>
+                <span class="berita-sub">
+                  <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Alkahfi Chandra Redhata</span>
+                  <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">
+                    13 April 2023</span>
+                </span>
+                <p class="berita-desc">
+                  Alhamdulillah MTsN Berau berbagi takjil gratis. <Br>
+                    Semoga berkah dunia akhirat Aamiin
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <!-- Popular Post -->
+    <div class="side-card">
+      <div class="side-card-header">
+        <h1 class="side-card-title">Postingan Populer</h1>
+      </div>
+      <div class="side-content-wrapper">
+        <div class="side-card-content">
+          <div class="popular-post-wrapper">
+            <a href="#" class="popular-side-link">
+              <div class="popular-post">
+                <div class="popular-post-img">
+                  <img src="./img/Logo Mts New.png" alt="Popular Post 1" class="img-popular-post">
+                </div>
+                <div class="popular-post-content">
+                  <h2 class="popular-post-title">
+                    Postingan Sangat Populer
+                  </h2>
+                  <span class="popular-post-sub">
+                    <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
+                    <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">
+                      Tanggal</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="popular-side-link">
+              <div class="popular-post">
+                <div class="popular-post-img">
+                  <img src="./img/Logo Mts New.png" alt="Popular Post 1" class="img-popular-post">
+                </div>
+                <div class="popular-post-content">
+                  <h2 class="popular-post-title">
+                    Postingan Sangat Populer
+                  </h2>
+                  <span class="popular-post-sub">
+                    <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
+                    <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">
+                      Tanggal</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="popular-side-link">
+              <div class="popular-post">
+                <div class="popular-post-img">
+                  <img src="./img/Logo Mts New.png" alt="Popular Post 1" class="img-popular-post">
+                </div>
+                <div class="popular-post-content">
+                  <h2 class="popular-post-title">
+                    Postingan Sangat Populer
+                  </h2>
+                  <span class="popular-post-sub">
+                    <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
+                    <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">
+                      Tanggal</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="popular-side-link">
+              <div class="popular-post">
+                <div class="popular-post-img">
+                  <img src="./img/Logo Mts New.png" alt="Popular Post 1" class="img-popular-post">
+                </div>
+                <div class="popular-post-content">
+                  <h2 class="popular-post-title">
+                    Postingan Sangat Populer
+                  </h2>
+                  <span class="popular-post-sub">
+                    <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
+                    <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">
+                      Tanggal</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="popular-side-link">
+              <div class="popular-post">
+                <div class="popular-post-img">
+                  <img src="./img/Logo Mts New.png" alt="Popular Post 1" class="img-popular-post">
+                </div>
+                <div class="popular-post-content">
+                  <h2 class="popular-post-title">
+                    Postingan Sangat Populer
+                  </h2>
+                  <span class="popular-post-sub">
+                    <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
+                    <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">
+                      Tanggal</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Calendar -->
+    <div class="calendar-side">
+      <div class="calendar">
+        <div class="header">
+          <a data-action="prev-month" href="javascript:void(0)" title="Previous Month"><i></i></a>
+          <div class="text" data-render="month-year"></div>
+          <a data-action="next-month" href="javascript:void(0)" title="Next Month"><i></i></a>
+        </div>
+        <div class="months" data-flow="left">
+          <div class="month month-a">
+            <div class="render render-a"></div>
+          </div>
+          <div class="month month-b">
+            <div class="render render-b"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Layanan -->
+    <div class="layanan-side">
+      <div class="side-card">
+        <div class="side-card-header">
+          <h2 class="side-card-title">Kontak</h2>
+        </div>
+        <div class="side-card-content layanan-content">
+          <div class="layanan-1">
+            <a href="#" target="_blank" class="layanan-link verval-ponsel">
+              <div class="layanan-dimmer">
+                <h3 class="layanan-title">
+                  Kontak Kami
+                </h3>
+              </div>
+            </a>
+
+            <a href="#" target="_blank" class="layanan-link verval-ponsel">
+              <div class="layanan-dimmer">
+                <h3 class="layanan-title">
+                  Kontak Kami
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div class="layanan-2">
+            <a href="#" target="_blank" class="layanan-link verval-ponsel">
+              <div class="layanan-dimmer">
+                <h3 class="layanan-title">
+                  Kontak Kami 
+                </h3>
+              </div>
+            </a>
+
+            <a href="#" target="_blank" class="layanan-link verval-ponsel">
+              <div class="layanan-dimmer">
+                <h3 class="layanan-title">
+                  Kontak Kami 
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Gallery -->
+<div class="gallery-wrapper">
+  <div class="gallery-container">
+    <div class="gallery-header">
+      <h2 class="gallery-title">
+        Galeri
+      </h2>
+    </div>
+
+    <div class="gallery-content">
+      <div class="swiper-wrapper gallery-wrapper-section">
+        <div class="swiper-slide gallery-img-wrapper">
+          <img src="./img/galeri 1.webp" class="gallery-img" alt="Gallery 1">
+        </div>
+        <div class="swiper-slide gallery-img-wrapper">
+          <img src="./img/galeri 2.webp" class="gallery-img" alt="Gallery 1">
+        </div>
+        <div class="swiper-slide gallery-img-wrapper">
+          <img src="./img/galeri 3.webp" class="gallery-img" alt="Gallery 1">
+        </div>
+        <div class="swiper-slide gallery-img-wrapper">
+          <img src="./img/galeri 4.webp" class="gallery-img" alt="Gallery 1">
+        </div>
+        <div class="swiper-slide gallery-img-wrapper">
+          <img src="./img/galeri 5.webp" class="gallery-img" alt="Gallery 1">
+        </div>
+        <div class="swiper-slide gallery-img-wrapper">
+          <img src="./img/galeri 6.webp" class="gallery-img" alt="Gallery 1">
+        </div>
+        <div class="swiper-slide gallery-img-wrapper">
+          <img src="./img/galeri 7.webp" class="gallery-img" alt="Gallery 1">
+        </div>
+        <div class="swiper-slide gallery-img-wrapper">
+          <img src="./img/galeri 8.webp" class="gallery-img" alt="Gallery 1">
+        </div>
+        <div class="swiper-slide gallery-img-wrapper">
+          <img src="./img/galeri 9.webp" class="gallery-img" alt="Gallery 1">
+        </div>
+        <div class="swiper-slide gallery-img-wrapper">
+          <img src="./img/galeri 10.webp" class="gallery-img" alt="Gallery 1">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- BAGIAN FOOTER -->
+<footer class="footer">
+  <div class="footer-wrapper grid grid-cols-1 md:grid-cols-3 gap-4">
+
+    <!-- Bagian 1 desktop -->
+    <div class="md:w-1/3 mx-20">
+      <div class="footer-brand flex justify-center">
+        <img src="./img/Logo Mts New.png" alt="Logo Madrasah Tsanawiyah Negeri Berau" class="logo-footer w-2 h-2">
+        <h5 class="brand-footer" style="font-size: 18px;"> Madrasah Tsanawiyah Negeri Berau </h5>
+      </div>
+      <br>
+
+      <small class="text-center">
+        <center>
+          <p>Madrasah Yang Menciptakan<br>Generasi Melenials dan Berprestasi Dengan Kaidah Al-Quran & Hadist.</p>
+        </center> <br>
+        <div class="flex justify-center">
+          <span
+            style="background-color: #FFA500; color: #FFFFFF; padding: 0.25rem 0.75rem; margin: 0 4px; border-radius: 9999px; font-weight: bold; font-size: 11px;">
+            MTsN Berau
+          </span>
+        </div>
+        <center>
+          <p class="mt-3">Madrasah Tsanawiyah Negeri Berau <br> berada di bawah naungan Kementrian Agama
+            <br>
+            Madrasah ini telah terakreditasi A <br>	1013/BAN-SM/SK/2019 <br> pada 18-11-2019.</p>
+        </center>
+      </small>
+    </div>
+    <!-- Akhir bagian 1 desktop -->
+
+<br> 
+
+<!-- Bagian 2 desktop -->
+<div class="md:w-1/3 mx-20">
+  <center>
+    <h5 class="text-black font-bold pb-2 footer-heading mb-4">Social Media</h5>
+  </center>
+  <div class="mt-4 mb-3">
+    <div class="col-md-8 mx-auto">
+      <div class="flex justify-center">
+        <a href="#" class="text-white bg-light p-2 rounded-full shadow" style="width: 30px; height: 30px; margin:0 5px;">
+          <center><img src="./img/logo wa.png" alt="whatsapp"></center>
+        </a>
+        <a href="https://instagram.com/mtsnberau.id?igshid=MzRlODBiNWFlZA==" class="text-white bg-light p-2 rounded-full shadow" style="width: 30px; height: 30px; margin:0 5px;">
+          <center><img src="./img/logo ig.png" alt="instagram"></center>
+        </a>
+        <a href="#" class="text-white bg-light p-2 rounded-full shadow" style="width: 30px; height: 30px; margin:0 5px;">
+          <center><img src="./img/logo youtube.png" alt="youtube"></center>
+        </a>
+        <!-- Tambahkan logo media sosial lainnya disini -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Akhir bagian 2 desktop -->
+
+
+
+    <br> 
+
+    <!-- Bagian 3 desktop -->
+    <div class="md:w-1/3 mx-20">
+      <center>
+        <h5 class="text-black font-bold pb-2 footer-heading mb-4">Kontak Kami</h5>
+      </center>
+      <div class="row justify-center" style="display: block;">
+        <div class="col-md-1 col-1">
+          <i class="footer-contactus text-warning fas fa-calendar-day"></i>
+        </div>
+        <div class="col">
+          <center>
+          <i class="footer-contactus">Senin - Kamis</i>
+          </center>
+        </div>
+      </div>
+      <div class="row justify-center" style="display: block;">
+        <div class="col-md-1 col-1">
+          <i class="footer-contactus text-warning fas fa-clock"></i>
+        </div>
+        <div class="col">
+          <center>
+          <i class="footer-contactus">07.00 - 14.30 </i>
+          </center>
+          <center>
+            <i class="footer-contactus">Jum'at</i>
+            </center>
+          </div>
+        </div>
+        <div class="row justify-center" style="display: block;">
+          <div class="col-md-1 col-1">
+            <i class="footer-contactus text-warning fas fa-clock"></i>
+          </div>
+          <div class="col">
+            <center>
+            <i class="footer-contactus">07.00 - 11.30 </i>
+            </center>
+            <center>
+                <i class="footer-contactus">Sabtu</i>
+                </center>
+              </div>
+            </div>
+            <div class="row justify-center" style="display: block;">
+              <div class="col-md-1 col-1">
+                <i class="footer-contactus text-warning fas fa-clock"></i>
+              </div>
+              <div class="col">
+                <center>
+                <i class="footer-contactus">07.00 - 13.30 </i>
+                </center>
+          <!-- <i class="footer-contactus">08.00 - 17.00 (Jam Kerja)</i> -->
+        </div>
+      </div>
+      <div class="row justify-center" style="display: block;">
+        <div class="col">
+          <center>
+          <i class="footer-contactus">08xx-xxxx-xxxx</i> /
+          <i class="footer-contactus">08xx-xxxx-xxxx</i>
+          </center>
+        </div>
+      </div>
+      <div class="row justify-center" style="display: block;">
+        <div class="col">
+          <center><a href="https://instagram.com/mtsnberau.id?igshid=MzRlODBiNWFlZA==" class="footer-contactus">@mtsnberau.id</a></center>
+        </div>
+      </div>
+      <div class="row justify-center" style="display: block;">
+        <div class="col-md-1 col-1 d-flex items-center">
+          <i class="footer-contactus text-warning fas fa-map-marker-alt"></i>
+        </div>
+        <div class="col">
+         <center> <i class="footer-contactus">Jl. Durian II, Tj. Redeb,<br> Kab Berau, Kalimantan Timur 77300, Indonesia.</i></center>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir bagian 3 desktop -->
+  </div>
+
+  <hr class="footer-separator">
+
+<div class="bottom-footer text-center">
+  <div class="bottom-footer-content flex flex-wrap items-center justify-center">
+    <span class="block">&copy; <a href="#" class="backlink"> <!--MTsN Berau--></a>. AllRightReserved.</span>
+    <span class="block">Made with <!--<i class="bi bi-suit-heart-fill text-red-500"></i>--> by-Alkahfi Chandra Redhata.</span>
+  </div>
+</div>
+
+
+</footer>
+
+      <button type="button" class="btn scrollTop"><i class="bi bi-arrow-up"></i></button>
+
+      <!-- Javascript -->
+      <script src="./dist/js/app.js"></script>
+      <script>
+        $(document).ready(function(){
+          
+        });
+      </script>
+  </body>
+</html>
